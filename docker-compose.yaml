@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  app:
+    image: node
+    ports:
+      - "3000:3000"
+    working_dir: /app/examples/todos
+    volumes:
+      - "./app:/app"
+    command: npm start
